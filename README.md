@@ -17,3 +17,5 @@ python main.py
 '''
 wget
 '''
+
+editing in neurolab
