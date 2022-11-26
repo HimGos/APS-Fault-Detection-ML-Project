@@ -19,3 +19,50 @@ wget
 '''
 
 editing in neurolab
+
+
+Git Commands :-
+
+If you are starting a project and you want to use git in your project
+'''
+git init
+'''
+This is going to initialize git in your source code.
+
+OR 
+
+You can clone existing github repo 
+'''
+git clone <github_url>
+'''
+Note: Clone/ Download Github repo in your system
+
+
+Add your changes made in file to git stageing are
+'''
+git add file_name
+'''
+Note- You can give file_name to add specific file or use '.' to add everything to stageing area
+
+
+Create commits
+'''
+git commit -m "message"
+'''
+
+'''
+git push origin main
+'''
+Note: origin --> contains url to your github repo
+main --> is your branch name
+
+To push your changes forcefully
+'''
+git push origin main -f
+'''
+
+
+To pull your changes from github repo
+'''
+git pull origin main
+'''
