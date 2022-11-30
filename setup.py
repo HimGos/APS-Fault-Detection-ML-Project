@@ -3,9 +3,17 @@ from typing import List
 # find_packages will search for folder and convert it into package to be used as library. In our case our folder is 'sensor'.
 # Any folder containing __init__ file will be considered as a package for find_packages.
 
-def get_requirements()->List[str]:...
-# this function provides list of library names that is required for this project
+REQUIREMENT_FILE_NAME="requirements.txt"
+HYPHEN_E_DOT = "-e ."
 
+def get_requirements()->List[str]:                    # this function provides list of library names that is required for this project
+
+    with open(REQUIREMENT_FILE_NAME) as requirement_file:
+        requirement_list = requirement_file.readlines()
+    requirement_list = [requirement_name.replace("\n", "") for requirement_name in requirement_list]
+    if HYPHEN_E_DOT in requirement_list:
+        requirement_list.remove(HYPHEN_E_DOT)
+    return requirement_list
 
 setup(
     name='sensor',
