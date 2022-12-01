@@ -1,0 +1,15 @@
+# Byte-compiled / optimized / DLL Files
+__pycache__/
+*.py[cod]
+*$pu.class
+artifacts
+# C extensions
+*.so
+demotest.py
+logs
+artifacts
+raw_data
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
