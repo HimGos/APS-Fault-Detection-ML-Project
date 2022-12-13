@@ -66,3 +66,10 @@ To pull your changes from github repo
 '''
 git pull origin main
 '''
+
+
+Ubuntu Commands at AWS VM :-
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo usermod -aG docker ubuntu
+newgrp docker
