@@ -46,9 +46,9 @@ Note- You can give file_name to add specific file or use '.' to add everything t
 
 
 Create commits
-'''
+```
 git commit -m "message"
-'''
+```
 
 '''
 git push origin main
